@@ -7,6 +7,10 @@ it's technically a cheat that operates with full read **and write** permissions 
 
 it's written in rust because i like pain and performance. it uses pattern scanning to find the jit-compiled assembly code in memory so it works across game restarts without needing pointer chains (which break constantly because of aslr and .net's fragmented heap).
 
+## read the blog
+want to read the full story of how i built this? check out the blog post:
+[blog.guswid.com/terraria-autofish](https://blog.guswid.com/terraria-autofish)
+
 ## features
 - **memory-based detection**: no ocr, no screen reading. it reads the fish id directly from ram. latency is in microseconds.
 - **whitelist system**: only catch what you want. filter by name (e.g., "crate", "honeyfin").
