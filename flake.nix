@@ -25,7 +25,7 @@
         (import ./nix/package.nix inputs)
       ];
       perSystem =
-        { pkgs, commonDeps, ... }:
+        { commonDeps, ... }:
         {
           devshells.default = {
             imports = [
