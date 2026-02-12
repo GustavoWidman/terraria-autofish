@@ -5,11 +5,11 @@ edition = "2024"
 
 [dependencies]
 chrono = { version = "0.4.43", features = ["serde"] }
-clap = { version = "4.5.57", features = ["derive"] }
+clap = { version = "4.5.58", features = ["derive"] }
 colog = "1.4.0"
 colored = "3.1.1"
 easy-config-store = "0.2.2"
-env_logger = "0.11.8"
+env_logger = "0.11.9"
 eyre = "0.6.12"
 global-hotkey = "0.7.0"
 log = "0.4.29"
@@ -20,14 +20,14 @@ serde = "1.0.228"
 smart-default = "0.7.1"
 tokio = { version = "1.49.0", features = ["full"] }
 tokio-util = { version = "0.7.18", features = ["rt"] }
-toml = "0.9.11"
+toml = "1.0.0"
 windows = { version = "0.62.2", features = [
-    "Win32_System_Diagnostics_Debug",
-    "Win32_System_Threading",
-    "Win32_System_Diagnostics_ToolHelp",
-    "Win32_System_Memory",
-    "Win32_Foundation"
-]}
+  "Win32_System_Diagnostics_Debug",
+  "Win32_System_Threading",
+  "Win32_System_Diagnostics_ToolHelp",
+  "Win32_System_Memory",
+  "Win32_Foundation",
+] }
 
 [profile.release]
 debug = true
